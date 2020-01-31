@@ -30,11 +30,11 @@ As a developer we need some basic tools to have git working on the machine.
 
 - [Chocolatey](https://chocolatey.org/), is a CLI-based package manager for Windows for installing softwares.
 - [Google Chrome Browser](https://www.google.com/chrome/), a more simple, secure, and faster web browser.
-- (Notepad++)[https://notepad-plus-plus.org/], or (Visual Studio Code)[https://code.visualstudio.com/]. It's lightweight, an opensource text editor for helping in developing new projects.
-- (Node.js)[https://nodejs.org/en/], make the process of writing web applications and REST APIs more delightful.
-- (cURL)[https://curl.haxx.se/], (Wget)[https://www.gnu.org/software/wget/] and (Postman)[https://www.getpostman.com/], software packages for retrieving files using HTTP, HTTPS, FTP and FTPS
-- (Git Bash)[https://git-scm.com/downloads], git for windows and (TortoiseGit)[https://tortoisegit.org/] helps integrate with Windows File Manager
-- (PuTTY)[https://putty.org/] - terminal emulator,  To create a new key pair for authentication.
+- [Notepad++](https://notepad-plus-plus.org/), or [Visual Studio Code](https://code.visualstudio.com/). It's lightweight, an opensource text editor for helping in developing new projects.
+- [Node.js](https://nodejs.org/en/), make the process of writing web applications and REST APIs more delightful.
+- [cURL](https://curl.haxx.se/), [Wget](https://www.gnu.org/software/wget/) and [Postman](https://www.getpostman.com/), software packages for retrieving files using HTTP, HTTPS, FTP and FTPS
+- [Git Bash](https://git-scm.com/downloads), git for windows and [TortoiseGit](https://tortoisegit.org/) helps integrate with Windows File Manager
+- [PuTTY](https://putty.org/) - terminal emulator,  To create a new key pair for authentication.
 - Web languages such as HTML, CSS and Javascript will be essential for developing interactive web interface.
 
 
