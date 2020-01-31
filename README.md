@@ -17,4 +17,8 @@ What I love to do!
 
 HTML, CSS, Bootstrap, Javascript, Less, Sass, Jquery, AngularJS, Node.js.
 
+What I can bring to table?
+
+Web Apps, Layouts, Templates, Theme, Animation, Interaction, Quality, Support.
+
 Thanks alot for visiting.
