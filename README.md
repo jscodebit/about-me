@@ -49,5 +49,6 @@ If you're a web developer, you're almost certainly constantly looking for ways t
 
 Anybody who would like to share their skill can contribute to this repository. This is Soujanya Janapatla, currently enrolled as a graduate student at NorthWest Missouri State University, in Applied Computer Science course work. The below is my collge campus photo..
 
-[Campus](https://res.cloudinary.com/dost68x1y/image/upload/v1580495805/samples/sample/college_campus_gmsnlf.jpg)
+![Campus](https://res.cloudinary.com/dost68x1y/image/upload/v1580495805/samples/sample/college_campus_gmsnlf.jpg)
+
 Thanks alot for visiting.
