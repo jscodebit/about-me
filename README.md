@@ -37,5 +37,12 @@ As a developer we need some basic tools to have git working on the machine.
 - [PuTTY](https://putty.org/) - terminal emulator,  To create a new key pair for authentication.
 - Web languages such as HTML, CSS and Javascript will be essential for developing interactive web interface.
 
+## Recommended Resources
+
+If you're a web developer, you're almost certainly constantly looking for ways to improve your skills, expand your technology standards, and keep on top of the latest trends in development.
+
+1. (Bootstrap)[https://getbootstrap.com/] is a front-end web framework—a program that has HTML, CSS, and JavaScript templates for building websites.
+1. (Codrops)[https://tympanus.net/codrops/] is a design and development blog with articles and tutorials about the latest web tips and trends.
+1. (DZone)[https://dzone.com/] is an online community where web developers can share helpful links with one another
 
 Thanks alot for visiting.
