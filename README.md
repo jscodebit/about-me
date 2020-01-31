@@ -4,9 +4,15 @@ I'm Soujanya, a web developer from Hyderabad, India. I worked at ADP India Pvt. 
 
 Let me give you a short introduction of myself, with all the keyfacts. If you want to know more about me just further explore this page.
 
-## [Repository Link](https://github.com/jscodebite)
+## [Repository Link](https://github.com/jscodebit)
 
 - [source repository](https://github.com/jscodebit/about-me)
 - [hosted page](https://jscodebit.github.io/about-me/)
+
+## About My Skills
+
+What I love to do!
+
+HTML, CSS, Bootstrap, Javascript, Less, Sass, Jquery, AngularJS
 
 Thanks alot for visiting.
