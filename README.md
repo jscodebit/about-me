@@ -45,4 +45,9 @@ If you're a web developer, you're almost certainly constantly looking for ways t
 1. [Codrops](https://tympanus.net/codrops/) is a design and development blog with articles and tutorials about the latest web tips and trends.
 1. [DZone](https://dzone.com/) is an online community where web developers can share helpful links with one another
 
+## Contributors
+
+Anybody who would like to share their skill can contribute to this repository. This is Soujanya Janapatla, currently enrolled as a graduate student at NorthWest Missouri State University, in Applied Computer Science course work. The below is my collge campus photo..
+
+[Campus](https://res.cloudinary.com/dost68x1y/image/upload/v1580495805/samples/sample/college_campus_gmsnlf.jpg)
 Thanks alot for visiting.
