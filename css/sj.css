@@ -1,7 +1,46 @@
 *{
-    padding: 2px;
-    margin: 2px;
+    color: #02263e;
 }
-section{
-    color: green;
+html, body {
+    margin: 0;
+    padding:0;
+}
+#about-me-logo {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 25%;
+    background-color: #dce453;
+}
+.navbar-brand.nav-align {
+    padding: 0;
+}
+.brand-name {
+    position: relative;
+    float: left;
+    font-size: 32px;
+    padding: 8px 20px;
+    line-height: normal;
+    color: #dce453;
+    white-space: nowrap;
+}
+.navbar.navbar-default.navbar-fixed-top.navbar-inverse{
+    padding-top: 10px;
+    padding-bottom: 6px;
+}
+.copyright {
+    border-top: 1px solid rgba(108, 121, 136, 0.1);
+    text-align: center;
+    padding: 20px 0;
+}
+.section-one{
+    padding-top: 20px;
+}
+.wrapper-container{
+    margin-top: 70px;
+}
+.profile-photo img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
 }
