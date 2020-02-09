@@ -38,6 +38,7 @@ html, body {
 }
 .wrapper-container{
     margin-top: 70px;
+    margin-bottom: 61px;
 }
 .profile-photo img{
     height: 150px;
@@ -93,4 +94,9 @@ ul.social-icons li.list-item .social-item {
     position: relative;
     font-size: 2em;
     top: 8px;
+}
+.travel-package img {
+    float: left;
+    display: inline-block;
+    margin: 0 10px 0 0;
 }
