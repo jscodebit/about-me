@@ -15,7 +15,7 @@ html, body {
 .navbar-brand.nav-align {
     padding: 0;
 }
-.brand-name {
+#brand-name {
     position: relative;
     float: left;
     font-size: 32px;
@@ -28,7 +28,7 @@ html, body {
     padding-top: 10px;
     padding-bottom: 6px;
 }
-.copyright {
+#copyright {
     border-top: 1px solid rgba(108, 121, 136, 0.1);
     text-align: center;
     padding: 20px 0;
