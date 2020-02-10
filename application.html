@@ -41,7 +41,7 @@
                 </div>
                 <div class="form-group">
                   <label for="radius">Enter the radius:</label>
-                  <input class="form-control" id="sphereRadius" type="number" placeholder="Sphere Radius">
+                  <input class="form-control" id="sphereRadius" type="number" placeholder="Sphere Radius" required>
                 </div>
                 <button class="btn btn-primary" onclick="surfaceArea()">Surface Area</button>
                 <button class="btn btn-primary" onclick="volume()">Volume</button><br><br>
@@ -64,15 +64,15 @@
 </body>
 <script>
 function surfaceArea(){
-    var radius = document.getElementById("sphereRadius").value;
+    let radius = document.getElementById("sphereRadius").value;
     console.log(radius);
-    var surfaceAreaResult = document.getElementById("surfaceAreaResult");
+    let surfaceAreaResult = document.getElementById("surfaceAreaResult");
     surfaceAreaResult.value = 4* 3.14* radius*radius;
 }
 function volume(){
-    var radius = document.getElementById("sphereRadius").value;
+    let radius = document.getElementById("sphereRadius").value;
     console.log(radius);
-    var volumeResult = document.getElementById("volumeResult");
+    let volumeResult = document.getElementById("volumeResult");
     volumeResult.value = 4* 3.14* radius*radius*radius;
 }
 </script>
