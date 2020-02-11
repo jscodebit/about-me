@@ -51,4 +51,10 @@ Anybody who would like to share their skill can contribute to this repository. T
 
 ![Campus](https://res.cloudinary.com/dost68x1y/image/upload/v1580495805/samples/sample/college_campus_gmsnlf.jpg)
 
-Thanks alot for visiting    .
+## References
+- [Bootstrap 3](https://getbootstrap.com/docs/3.4/components/)
+- [Fontawesome Icons](https://fontawesome.com/icons?from=io)
+- [Free stock images](https://www.pexels.com/)
+
+Thanks alot for visiting.
+
