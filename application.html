@@ -47,12 +47,17 @@
                 <button class="btn btn-primary" onclick="volume()">Volume</button><br><br>
                 <div class="row">
                   <div class="col-md-2">
-                    <input class="form-control" type="number" id="surfaceAreaResult">
+                    <input class="form-control" type="text" id="surfaceAreaResult">
                   </div>
                   <div class="col-md-2">
-                    <input class="form-control" type="number" id="volumeResult">
+                    <input class="form-control" type="text" id="volumeResult">
                   </div>
                 </div>
+            </section>
+            <section class="section-one col-md-6">
+              <h3>Learn AJAX</h3>
+              <div id="output"></div>
+              <button class="btn btn-primary" id="loadNew">Load</button>
             </section>
         </article>
       </main>
@@ -73,6 +78,28 @@
           let volumeResult = document.getElementById("volumeResult");
           volumeResult.value = 4* 3.14* radius*radius*radius;
       }
+      var output = document.getElementById('output');
+        var buttonClick = document.getElementById('loadNew')
+        buttonClick.addEventListener('click',function(){
+            loadAjax();
+        })
+        function loadAjax(){
+        var ajax = new XMLHttpRequest();
+        ajax.onreadystatechange = function(){
+            //console.log('state changed',ajax.readyState,ajax.status)
+            if(ajax.readyState == 4 && ajax.status==200){
+                   // console.log(ajax.responseText)
+                var json = JSON.parse(ajax.responseText);
+                 var data = json.results[0];
+         
+                var message = '<h2>'+data.name.first + '  ' + data.name.last + '</h2><img src="'+data.picture.large +'">'
+               
+                 output.innerHTML = message;
+            }
+        }
+        ajax.open('GET','https://randomuser.me/api/',true)
+        ajax.send();
+        }
     </script>
 </body>
 </html>

@@ -9,6 +9,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.9.2.css">
     <link rel="stylesheet" href="css/sj.css">
 </head>
 
@@ -170,5 +171,40 @@
         <div id="copyright">
             <i class="fa fa-copyright"></i> Copyright 2020, made with <i class="fa fa-heart"></i>, by Soujanya Janapatla</div>
     </footer>
+    <script type="text/javascript">
+        var output = document.getElementById('output');
+        var buttonClick = document.getElementById('loadNew')
+        buttonClick.addEventListener('click',function(){
+            loadAjax();
+        })
+        function loadAjax(){
+        var ajax = new XMLHttpRequest();
+        ajax.onreadystatechange = function(){
+            //console.log('state changed',ajax.readyState,ajax.status)
+            if(ajax.readyState == 4 && ajax.status==200){
+                   // console.log(ajax.responseText)
+                var json = JSON.parse(ajax.responseText);
+                 var data = json.results[0];
+         
+                var message = '<h2>'+data.name.first + '  ' + data.name.last + '</h2><img src="'+data.picture.large +'">'
+               
+                 output.innerHTML = message;
+            }
+        }
+        /*
+        ajax.onprogress =function(){
+            console.log('PROGRESS',ajax.readyState,ajax.status)
+        }
+        ajax.onload =function(){
+            console.log('DONE',ajax.readyState,ajax.status)
+        }
+        */
+        ajax.open('GET','https://randomuser.me/api/',true)
+        ajax.send();
+        }
+        
+    </script>
+    <script src="https://code.jquery.com/qunit/qunit-2.9.2.js"></script>
+    <script src="test/main.test.js"></script>
 </body>
 </html>
