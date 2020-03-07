@@ -1,9 +1,21 @@
 QUnit.module('MAIN MODULE', {})  // group all these tests together
 
-QUnit.test('TEST add', assert => {
-  assert.equal(add(1, 1), 2, 'Positive integers')
-  assert.equal(add(-1, -1), -2, 'Negative integers')
-  assert.equal(add(-10, 10), 0, 'Mixed')
+// QUnit.test('TEST add', assert => {
+//   assert.equal(add(1, 1), 2, 'Positive integers')
+//   assert.equal(add(-1, -1), -2, 'Negative integers')
+//   assert.equal(add(-10, 10), 0, 'Mixed')
+// })
+
+QUnit.test('TEST surfaceArea', assert => {
+  assert.equal(sphereSurfaceArea(2), 50.24, 'Positive integers')
+  assert.equal(sphereSurfaceArea(-1), 12.56, 'Negative integers')
+  assert.equal(sphereSurfaceArea(3.04), 116.07449600000001, 'Float Values')
+})
+
+QUnit.test('TEST volume', assert => {
+  assert.equal(sphereVolume(2), 100.48, 'Positive integers')
+  assert.equal(sphereVolume(-1), -12.56, 'Negative integers')
+  assert.equal(sphereVolume(3.04), 352.86646784000004, 'Float Values')
 })
 
 QUnit.config.autostart = false  // sync = false; start after loading html
@@ -38,14 +50,14 @@ window.addEventListener('load', () => {
     })
 })
 
-QUnit.test("TEST first number validation", assert => {
-  const input = document.querySelector('#firstNumber')
-  const warning = document.querySelector('#firstWarning')
-  input.value = -3;
-  assert.equal(input.value, -3, "Bad value assigned")
-  assert.strictEqual(input.checkValidity(), false, "Correctly fails validation")
-  input.focus()
-  input.blur()
-  assert.strictEqual(warning.innerHTML, 'Invalid input', `Correctly adds warning ${warning}`)
-})
+// QUnit.test("TEST first number validation", assert => {
+//   const input = document.querySelector('#firstNumber')
+//   const warning = document.querySelector('#firstWarning')
+//   input.value = -3;
+//   assert.equal(input.value, -3, "Bad value assigned")
+//   assert.strictEqual(input.checkValidity(), false, "Correctly fails validation")
+//   input.focus()
+//   input.blur()
+//   assert.strictEqual(warning.innerHTML, 'Invalid input', `Correctly adds warning ${warning}`)
+// })
 

@@ -1,12 +1,22 @@
-function surfaceArea(){
-    var radius = document.getElementById("sphereRadius").value;
+function sphereSurfaceArea(radius){
+    return 4* 3.14* radius*radius
+  }
+  function surfaceArea(){
+    let radius = parseInt(document.getElementById("sphereRadius").value);
     console.log(radius);
-    var surfaceAreaResult = document.getElementById("surfaceAreaResult");
-    surfaceAreaResult.innerHTML = 4* 3.14* radius*radius;
-}
-function volume(){
-    var radius = document.getElementById("sphereRadius").value;
+    let surfaceAreaResult = sphereSurfaceArea(radius);
+    let surfaceAreaElement =  document.getElementById("surfaceAreaResult");
+    surfaceAreaElement.value = surfaceAreaResult;
+  }
+  
+  function sphereVolume(radius){
+    return 4* 3.14* radius*radius*radius;
+  }
+  
+  function volume(){
+    let radius = parseInt(document.getElementById("sphereRadius").value);
     console.log(radius);
-    var volumeResult = document.getElementById("volumeResult");
-    surfaceAreaResult.innerHTML = 4* 3.14* radius*radius*radius;
-}
+    let volumeResult = sphereVolume(radius);
+    let volumeElement = document.getElementById("volumeResult");
+    volumeElement.value = volumeResult;
+  }
