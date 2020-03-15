@@ -42,18 +42,27 @@
                 </div>
                 <div class="form-group">
                   <label for="sphereRadius">Enter the radius:</label>
-                  <input id="sphereRadius" class="form-control" type="number" placeholder="Sphere Radius" required>
+                  <input id="sphereRadius" class="form-control" type="number" value="2" placeholder="Sphere Radius" required>
                 </div>
                 <button class="btn btn-primary" onclick="surfaceArea()">Surface Area</button>
                 <button class="btn btn-primary" onclick="volume()">Volume</button><br><br>
                 <div class="row">
-                  <div class="col-md-2">
+                  <div class="col-md-2 form-group">
                     <input class="form-control" type="text" id="surfaceAreaResult">
                   </div>
-                  <div class="col-md-2">
+                  <div class="col-md-2 form-group">
                     <input class="form-control" type="text" id="volumeResult">
                   </div>
                 </div>
+                <div class="row form-group">
+                  <div class="col-md-4">
+                    <button id="localStorage" class="btn btn-primary">Click for local storage!</button>
+                  </div>
+                  <div class="col-md-3">
+                    <button id="wiper" class="btn btn-danger">Clear Storage</button>
+                  </div>
+                </div>
+                <div id="result"></div>
             </section>
             <section class="section-one col-md-6">
               <h3>Learn AJAX</h3>
