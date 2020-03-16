@@ -45,7 +45,6 @@
   }
 
   document.querySelector('#localStorage').addEventListener('click', () => {
-    debugger;
     console.log('  Starting clicker click handler');
     const origCount = parseInt(localStorage.getItem('countOfClicks')) || 0;
     const sphereRadius = document.querySelector('#sphereRadius').value;
@@ -62,7 +61,19 @@
     localStorage.setItem('sphereRadius', sphereRadius);
     localStorage.setItem('surfaceAreaResult', surfaceAreaResult);
     localStorage.setItem('volumeResult', volumeResult);
-    console.log('  Finished clicker click handler');
+
+    if (sphereRadius != null) {
+      sessionStorage.setItem("sphereRadius", sphereRadius);
+    }
+    if (surfaceAreaResult != null) {
+      sessionStorage.setItem("surfaceAreaResult", surfaceAreaResult);
+    }
+    if (volumeResult != null) {
+      sessionStorage.setItem("volumeResult", volumeResult);
+    }
+    const radius = sessionStorage.getItem("sphereRadius");
+    const surfaceAreaResult1 = sessionStorage.getItem("surfaceAreaResult");
+    const volumeResult1 = sessionStorage.getItem("volumeResult");
   })
 
   document.querySelector('#wiper').addEventListener('click', () => {
